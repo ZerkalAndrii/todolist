@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список справ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Список справ</h1>
+        <div id="widgets">
+            <div id="date" class="widget"></div>
+            <div id="weather" class="widget"></div>
+            <div id="analogClock" class="widget">
+                <div class="analog-clock">
+                    <div class="hour-hand hand"></div>
+                    <div class="minute-hand hand"></div>
+                    <div class="second-hand hand"></div>
+                </div>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="писати тут...">
+            <button id="addTaskBtn">Нове завдання</button>
+            <button id="clearAllBtn">Не хочу, не буду</button>
+            <button id="toggleAllBtn">Я молодець!</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
