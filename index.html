@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Список справ</title>
+    <title>Мій планувальник</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>ПЛАНУВАЛЬНИК</h1>
+        <h1>МІЙ ПЛАНУВАЛЬНИК</h1>
         <div id="widgets" class="widgets">
+           <!--віджет часу--> 
             <div id="datetime-widget" class="widget">
-                <iframe width='266' height='166' style='padding:0!important;margin:0!important;border:none!important;background:none!important;background:transparent!important;margin-left: 100px;' marginheight='0' marginwidth='0' frameborder='0' scrolling='no' comment='/*defined*/' src='https://dayspedia.com/if/digit/?v=1&iframe=eyJ3LTEyIjpmYWxzZSwidy0xMSI6dHJ1ZSwidy0xMyI6dHJ1ZSwidy0xNCI6ZmFsc2UsInctMTUiOmZhbHNlLCJ3LTExMCI6ZmFsc2UsInctd2lkdGgtMCI6dHJ1ZSwidy13aWR0aC0xIjpmYWxzZSwidy13aWR0aC0yIjpmYWxzZSwidy0xNiI6IjI0cHgiLCJ3LTE5IjoiNDgiLCJ3LTE3IjoiMTYiLCJ3LTIxIjp0cnVlLCJiZ2ltYWdlIjotMSwiYmdpbWFnZVNldCI6ZmFsc2UsInctMjFjMCI6IiMxMDY1OGUiLCJ3LTAiOnRydWUsInctMyI6dHJ1ZSwidy0zYzAiOiIjMzQzNDM0Iiwidy0zYjAiOiIxIiwidy02IjoiI2ZhZjRmNCIsInctMjAiOnRydWUsInctNCI6IiNlY2VjZjMiLCJ3LTE4Ijp0cnVlLCJ3LXdpZHRoLTJjLTAiOiIzMDAiLCJ3LTExNSI6ZmFsc2V9&lang=uk&cityid=3081'></iframe>
+                <iframe width='266' height='166' style='padding:0!important;margin-left: 50px!important;border:none!important;background:none!important;background:transparent!important;margin-left: 100px;' marginheight='0' marginwidth='0' frameborder='0' scrolling='no' comment='/*defined*/' src='https://dayspedia.com/if/digit/?v=1&iframe=eyJ3LTEyIjpmYWxzZSwidy0xMSI6dHJ1ZSwidy0xMyI6dHJ1ZSwidy0xNCI6ZmFsc2UsInctMTUiOmZhbHNlLCJ3LTExMCI6ZmFsc2UsInctd2lkdGgtMCI6dHJ1ZSwidy13aWR0aC0xIjpmYWxzZSwidy13aWR0aC0yIjpmYWxzZSwidy0xNiI6IjI0cHgiLCJ3LTE5IjoiNDgiLCJ3LTE3IjoiMTYiLCJ3LTIxIjp0cnVlLCJiZ2ltYWdlIjotMSwiYmdpbWFnZVNldCI6ZmFsc2UsInctMjFjMCI6IiMxMDY1OGUiLCJ3LTAiOnRydWUsInctMyI6dHJ1ZSwidy0zYzAiOiIjMzQzNDM0Iiwidy0zYjAiOiIxIiwidy02IjoiI2ZhZjRmNCIsInctMjAiOnRydWUsInctNCI6IiNlY2VjZjMiLCJ3LTE4Ijp0cnVlLCJ3LXdpZHRoLTJjLTAiOiIzMDAiLCJ3LTExNSI6ZmFsc2V9&lang=uk&cityid=3081'></iframe>
             </div>
             <div id="weather-widget" class="widget"></div>
         </div>
+        <!--перелік списків-->
         <div class="list-container">
             <select id="listSelect">
                 <option value="">Вибрати список</option>
             </select>
-            <button id="createListBtn">Створити новий список</button>
-            <button id="deleteListBtn">Видалити список</button>
+            <!--кнопки керування списком-->
+            <button id="createListBtn">Створити список📝</button>
+            <button id="deleteListBtn">Видалити список🚫</button>
         </div>
+        <!--кнопки поточного списку-->
         <div class="input-container">
-            <input type="text" id="taskInput" placeholder="Писати тут...">
-            <button id="addTaskBtn">Створити</button>
-            <button id="clearAllBtn">До біса!</button>
-            <button id="toggleAllBtn">DONE!</button>
-        </div>        
+            <input type="text" id="taskInput" placeholder="Писати тут... 🖌 ">
+            <button id="addTaskBtn">+ Квест✍</button>
+            <button id="clearAllBtn">До біса!🚽</button>
+            <button id="toggleAllBtn">DONE!👌</button>
+        </div>  
+        <!--власне список-->      
         <ul id="taskList" class="tasklist"></ul>
     </div>
     <script src="script.js"></script>
